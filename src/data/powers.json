@@ -1,0 +1,486 @@
+{
+	"Affliction": {
+		"costPerRank": 1,
+		"type": "Attack",
+		"action": "Standard",
+		"range": "Close",
+		"duration": "Instant",
+		"resistance": "Fortitude or Will",
+		"extras": {
+			"Alternate Resistance": { "costPerRank": 0 },
+			"Concentration": { "costPerRank": 1 },
+			"Cumulative": { "costPerRank": 1 },
+			"Extra Condition": { "costPerRank": 1 },
+			"Progressive": { "costPerRank": 1 }
+		},
+		"flaws": {
+			"Instant Recovery": { "costPerRank": -1 },
+			"Limited Degree": { "costPerRank": -1 }
+		}
+	},
+	"Burrowing": {
+		"costPerRank": 1,
+		"type": "Movement",
+		"action": "Free",
+		"range": "Personal",
+		"duration": "Sustained",
+		"resistance": "n/a",
+		"extras": {
+			"Penetrating": { "costPerRank": 1 },
+			"Ranged": { "costPerRank": 1, "maxTier": 2 }
+		},
+		"flaws": {
+			"Limited": { "costPerRank": -1 }
+		}
+	},
+	"Communication": {
+		"costPerRank": 4,
+		"type": "Sensory",
+		"action": "Free",
+		"range": "Rank",
+		"duration": "Sustained",
+		"resistance": "n/a",
+		"maxRanks": 5,
+		"extras": {
+			"Area": { "costPerRank": 1 },
+			"Dimensional": { "flatCost": 1 },
+			"Rapid": { "flatCost": 1 },
+			"Selective": { "flatCost": 1 },
+			"Sublte": { "flatCost": 1, "maxTier": 2 }
+		},
+		"flaws": {
+			"Limited": { "costPerRank": -1 },
+			"Sense-Depenent": { "costPerRank": -1 }
+		}
+	},
+	"Comprehend": {
+		"costPerRank": 2,
+		"type": "Sensory",
+		"action": "None",
+		"range": "Personal",
+		"duration": "Permanent",
+		"resistance": "n/a",
+		"extras": {},
+		"flaws": {
+			"Type": { "costPerRank": -1, "maxTier": 2 }
+		}
+	},
+	"Concealment": {
+		"costPerRank": 2,
+		"type": "Sensory",
+		"action": "Free",
+		"range": "Personal",
+		"duration": "Sustained",
+		"resistance": "n/a",
+		"extras": {
+			"Affects Others": { "costPerRank": 1 },
+			"Area": { "costPerRank": 1 },
+			"Attack": { "costPerRank": 0 },
+			"Precise": { "flatCost": 1 }
+		},
+		"flaws": {
+			"Blending": { "costPerRank": -1 },
+			"Limited": { "costPerRank": -1 },
+			"Partial": { "costPerRank": -1 },
+			"Passive": { "costPerRank": -1 },
+			"Resistible": { "costPerRank": -1 }
+		}
+	},
+	"Create": {
+		"TODO": true,
+		"costPerRank": 2,
+		"type": "TYPE",
+		"action": "ACTION",
+		"range": "RANGE",
+		"duration": "DURATION",
+		"resistance": "RESISTANCE",
+		"extras": {},
+		"flaws": {}
+	},
+	"Damage": {
+		"TODO": true,
+		"costPerRank": 1,
+		"type": "TYPE",
+		"action": "ACTION",
+		"range": "RANGE",
+		"duration": "DURATION",
+		"resistance": "RESISTANCE",
+		"extras": {},
+		"flaws": {}
+	},
+	"Deflect": {
+		"TODO": true,
+		"costPerRank": 1,
+		"type": "TYPE",
+		"action": "ACTION",
+		"range": "RANGE",
+		"duration": "DURATION",
+		"resistance": "RESISTANCE",
+		"extras": {},
+		"flaws": {}
+	},
+	"Elongation": {
+		"TODO": true,
+		"costPerRank": 1,
+		"type": "TYPE",
+		"action": "ACTION",
+		"range": "RANGE",
+		"duration": "DURATION",
+		"resistance": "RESISTANCE",
+		"extras": {},
+		"flaws": {}
+	},
+	"Energy Absorption": {
+		"TODO": true,
+		"costPerRank": "TODO",
+		"type": "TYPE",
+		"action": "ACTION",
+		"range": "RANGE",
+		"duration": "DURATION",
+		"resistance": "RESISTANCE",
+		"extras": {},
+		"flaws": {}
+	},
+	"Enhanced Trait": {
+		"TODO": true,
+		"costPerRank": "TODO",
+		"type": "TYPE",
+		"action": "ACTION",
+		"range": "RANGE",
+		"duration": "DURATION",
+		"resistance": "RESISTANCE",
+		"extras": {},
+		"flaws": {}
+	},
+	"Environment": {
+		"TODO": true,
+		"costPerRank": "TODO",
+		"type": "TYPE",
+		"action": "ACTION",
+		"range": "RANGE",
+		"duration": "DURATION",
+		"resistance": "RESISTANCE",
+		"extras": {},
+		"flaws": {}
+	},
+	"Extra Limbs": {
+		"TODO": true,
+		"costPerRank": 1,
+		"type": "TYPE",
+		"action": "ACTION",
+		"range": "RANGE",
+		"duration": "DURATION",
+		"resistance": "RESISTANCE",
+		"extras": {},
+		"flaws": {}
+	},
+	"Feature": {
+		"TODO": true,
+		"costPerRank": 1,
+		"type": "TYPE",
+		"action": "ACTION",
+		"range": "RANGE",
+		"duration": "DURATION",
+		"resistance": "RESISTANCE",
+		"extras": {},
+		"flaws": {}
+	},
+	"Flight": {
+		"TODO": true,
+		"costPerRank": 2,
+		"type": "TYPE",
+		"action": "ACTION",
+		"range": "RANGE",
+		"duration": "DURATION",
+		"resistance": "RESISTANCE",
+		"extras": {},
+		"flaws": {}
+	},
+	"Growth": {
+		"TODO": true,
+		"costPerRank": 2,
+		"type": "TYPE",
+		"action": "ACTION",
+		"range": "RANGE",
+		"duration": "DURATION",
+		"resistance": "RESISTANCE",
+		"extras": {},
+		"flaws": {}
+	},
+	"Healing": {
+		"TODO": true,
+		"costPerRank": 2,
+		"type": "TYPE",
+		"action": "ACTION",
+		"range": "RANGE",
+		"duration": "DURATION",
+		"resistance": "RESISTANCE",
+		"extras": {},
+		"flaws": {}
+	},
+	"Illusion": {
+		"TODO": true,
+		"costPerRank": "TODO",
+		"type": "TYPE",
+		"action": "ACTION",
+		"range": "RANGE",
+		"duration": "DURATION",
+		"resistance": "RESISTANCE",
+		"extras": {},
+		"flaws": {}
+	},
+	"Immortality": {
+		"TODO": true,
+		"costPerRank": 2,
+		"type": "TYPE",
+		"action": "ACTION",
+		"range": "RANGE",
+		"duration": "DURATION",
+		"resistance": "RESISTANCE",
+		"extras": {},
+		"flaws": {}
+	},
+	"Immunity": {
+		"TODO": true,
+		"costPerRank": 1,
+		"type": "TYPE",
+		"action": "ACTION",
+		"range": "RANGE",
+		"duration": "DURATION",
+		"resistance": "RESISTANCE",
+		"extras": {},
+		"flaws": {}
+	},
+	"Insubstantial": {
+		"TODO": true,
+		"costPerRank": 5,
+		"type": "TYPE",
+		"action": "ACTION",
+		"range": "RANGE",
+		"duration": "DURATION",
+		"resistance": "RESISTANCE",
+		"extras": {},
+		"flaws": {}
+	},
+	"Leaping": {
+		"TODO": true,
+		"costPerRank": 1,
+		"type": "TYPE",
+		"action": "ACTION",
+		"range": "RANGE",
+		"duration": "DURATION",
+		"resistance": "RESISTANCE",
+		"extras": {},
+		"flaws": {}
+	},
+	"Luck Control": {
+		"TODO": true,
+		"costPerRank": 3,
+		"type": "TYPE",
+		"action": "ACTION",
+		"range": "RANGE",
+		"duration": "DURATION",
+		"resistance": "RESISTANCE",
+		"extras": {},
+		"flaws": {}
+	},
+	"Mind Reading": {
+		"TODO": true,
+		"costPerRank": 2,
+		"type": "TYPE",
+		"action": "ACTION",
+		"range": "RANGE",
+		"duration": "DURATION",
+		"resistance": "RESISTANCE",
+		"extras": {},
+		"flaws": {}
+	},
+	"Morph": {
+		"TODO": true,
+		"costPerRank": 5,
+		"type": "TYPE",
+		"action": "ACTION",
+		"range": "RANGE",
+		"duration": "DURATION",
+		"resistance": "RESISTANCE",
+		"extras": {},
+		"flaws": {}
+	},
+	"Move Object": {
+		"TODO": true,
+		"costPerRank": 2,
+		"type": "TYPE",
+		"action": "ACTION",
+		"range": "RANGE",
+		"duration": "DURATION",
+		"resistance": "RESISTANCE",
+		"extras": {},
+		"flaws": {}
+	},
+	"Movement": {
+		"TODO": true,
+		"costPerRank": 2,
+		"type": "TYPE",
+		"action": "ACTION",
+		"range": "RANGE",
+		"duration": "DURATION",
+		"resistance": "RESISTANCE",
+		"extras": {},
+		"flaws": {}
+	},
+	"Nullify": {
+		"TODO": true,
+		"costPerRank": 1,
+		"type": "TYPE",
+		"action": "ACTION",
+		"range": "RANGE",
+		"duration": "DURATION",
+		"resistance": "RESISTANCE",
+		"extras": {},
+		"flaws": {}
+	},
+	"Protection": {
+		"TODO": true,
+		"costPerRank": 1,
+		"type": "TYPE",
+		"action": "ACTION",
+		"range": "RANGE",
+		"duration": "DURATION",
+		"resistance": "RESISTANCE",
+		"extras": {},
+		"flaws": {}
+	},
+	"Quickness": {
+		"TODO": true,
+		"costPerRank": 1,
+		"type": "TYPE",
+		"action": "ACTION",
+		"range": "RANGE",
+		"duration": "DURATION",
+		"resistance": "RESISTANCE",
+		"extras": {},
+		"flaws": {}
+	},
+	"Regeneration": {
+		"TODO": true,
+		"costPerRank": 1,
+		"type": "TYPE",
+		"action": "ACTION",
+		"range": "RANGE",
+		"duration": "DURATION",
+		"resistance": "RESISTANCE",
+		"extras": {},
+		"flaws": {}
+	},
+	"Remote Sensing": {
+		"TODO": true,
+		"costPerRank": "TODO",
+		"type": "TYPE",
+		"action": "ACTION",
+		"range": "RANGE",
+		"duration": "DURATION",
+		"resistance": "RESISTANCE",
+		"extras": {},
+		"flaws": {}
+	},
+	"Senses": {
+		"TODO": true,
+		"costPerRank": 1,
+		"type": "TYPE",
+		"action": "ACTION",
+		"range": "RANGE",
+		"duration": "DURATION",
+		"resistance": "RESISTANCE",
+		"extras": {},
+		"flaws": {}
+	},
+	"Shrinking": {
+		"TODO": true,
+		"costPerRank": 2,
+		"type": "TYPE",
+		"action": "ACTION",
+		"range": "RANGE",
+		"duration": "DURATION",
+		"resistance": "RESISTANCE",
+		"extras": {},
+		"flaws": {}
+	},
+	"Speed": {
+		"TODO": true,
+		"costPerRank": 1,
+		"type": "TYPE",
+		"action": "ACTION",
+		"range": "RANGE",
+		"duration": "DURATION",
+		"resistance": "RESISTANCE",
+		"extras": {},
+		"flaws": {}
+	},
+	"Summon": {
+		"TODO": true,
+		"costPerRank": 2,
+		"type": "TYPE",
+		"action": "ACTION",
+		"range": "RANGE",
+		"duration": "DURATION",
+		"resistance": "RESISTANCE",
+		"extras": {},
+		"flaws": {}
+	},
+	"Swimming": {
+		"TODO": true,
+		"costPerRank": 1,
+		"type": "TYPE",
+		"action": "ACTION",
+		"range": "RANGE",
+		"duration": "DURATION",
+		"resistance": "RESISTANCE",
+		"extras": {},
+		"flaws": {}
+	},
+	"Teleport": {
+		"TODO": true,
+		"costPerRank": 2,
+		"type": "TYPE",
+		"action": "ACTION",
+		"range": "RANGE",
+		"duration": "DURATION",
+		"resistance": "RESISTANCE",
+		"extras": {},
+		"flaws": {}
+	},
+	"Transform": {
+		"TODO": true,
+		"costPerRank": "TODO",
+		"type": "TYPE",
+		"action": "ACTION",
+		"range": "RANGE",
+		"duration": "DURATION",
+		"resistance": "RESISTANCE",
+		"extras": {},
+		"flaws": {}
+	},
+	"Variable": {
+		"TODO": true,
+		"costPerRank": 7,
+		"type": "TYPE",
+		"action": "ACTION",
+		"range": "RANGE",
+		"duration": "DURATION",
+		"resistance": "RESISTANCE",
+		"extras": {},
+		"flaws": {}
+	},
+	"Weaken": {
+		"TODO": true,
+		"costPerRank": 1,
+		"type": "TYPE",
+		"action": "ACTION",
+		"range": "RANGE",
+		"duration": "DURATION",
+		"resistance": "RESISTANCE",
+		"extras": {},
+		"flaws": {}
+	},
+	"": {}
+}
