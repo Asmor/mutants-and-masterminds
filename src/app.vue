@@ -1,57 +1,41 @@
 <script>
 "use strict";
-import power from "./components/power.vue";
 import powerList from "./data/powers.json";
 import { EventBus } from "./event-bus.js";
-import hero from "./model/hero.js";
+import { registerPowerEventHandlers } from "./util.js";
+
+import Hero from "./model/hero.js";
+
+import powerSelector from "./components/power-selector.vue";
+
+var hero = new Hero();
+var HERO_ID = "hero";
+
+registerPowerEventHandlers({
+	target: hero,
+	target_id: HERO_ID,
+});
 
 export default {
 	name: 'app',
 	data: function () {
-		var vm = this;
-
 		return {
 			hero,
-			powerToAdd: "",
-			powerNames: Object.keys(powerList)
-				.filter(powerName => powerName && !powerList[powerName].TODO)
-				.sort(),
+			HERO_ID,
 		};
 	},
-	methods: {
-		addPower: function () {
-			var name = this.powerToAdd;
-			EventBus.$emit("add-power", {
-				name,
-				definition: powerList[name]
-			});
-			this.powerToAdd = "";
-		},
-	},
 	components: {
-		power,
+		powerSelector,
 	},
 };
 </script>
 
 <template>
 	<div id="app">
-		<power
-			v-for="(power, index) in hero.powers"
-			:power="power"
-			:index="index"
-		></power>
-		<select
-			@change="addPower()"
-			v-model="powerToAdd"
-		>
-			<option default value="">Select a power</option>
-			<option
-				v-for="powerName in powerNames"
-			>
-				{{ powerName }}
-			</option>
-		</select>
+	<power-selector
+		:id="HERO_ID"
+		:power-collection="hero.powers"
+	></power-selector>
 	</div>
 </template>
 

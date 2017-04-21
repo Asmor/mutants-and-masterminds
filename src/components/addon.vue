@@ -5,13 +5,14 @@ export default {
 	props: [
 		"type",
 		"name",
+		"id",
 		"index",
 		"definition",
 		"tier",
 	],
 	methods: {
-		toggleAddon: function (type, addon) {
-			EventBus.$emit("toggle-power-addon", { type: this.type, addon: this.name, index: this.index });
+		toggleAddon: function () {
+			EventBus.$emit("toggle-power-addon", { type: this.type, addon: this.name, id: this.id, index: this.index });
 		},
 	},
 };

@@ -4,6 +4,7 @@ import addon from "./addon.vue";
 
 export default {
 	props: [
+		"id",
 		"index",
 		"power",
 	],
@@ -23,13 +24,10 @@ export default {
 	},
 	methods: {
 		adjustRank: function (amount) {
-			EventBus.$emit("adjust-rank", { amount, index: this.index });
+			EventBus.$emit("adjust-rank", { amount, id: this.id, index: this.index });
 		},
 		deleteSelf: function () {
-			EventBus.$emit("delete-power", { index: this.index });
-		},
-		toggleAddon: function (type, addon) {
-			EventBus.$emit("toggle-power-addon", { type, addon, index: this.index });
+			EventBus.$emit("delete-power", { id: this.id, index: this.index });
 		},
 	},
 	components: {
@@ -92,6 +90,7 @@ export default {
 						<addon
 							type="extra"
 							:name="extra"
+							:id="id"
 							:index="index"
 							:definition="power.definition.extras[extra]"
 							:tier="power.extras[extra].tier"
@@ -109,6 +108,7 @@ export default {
 						<addon
 							type="flaw"
 							:name="flaw"
+							:id="id"
 							:index="index"
 							:definition="power.definition.flaws[flaw]"
 							:tier="power.flaws[flaw].tier"
